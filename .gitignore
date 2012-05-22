@@ -1,5 +1,6 @@
 *.class
-
+.*
+*000*.js
 # Package Files #
 *.jar
 *.war
