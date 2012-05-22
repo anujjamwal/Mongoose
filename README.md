@@ -6,8 +6,8 @@ A mongo db migration tool written in native javascipt.
 Mongoose Working
 ================
 
-Mongoose works by executing the mongo scripts from the folder migrations. The scripts named as :
-            <execute-order>_<migration-name>.js
+Mongoose works by executing the mongo scripts from the folder migrations. The scripts named as 
+    file:    <execute order>_<migration name>.js
     say:
             0001_my_first_migration.js
 
