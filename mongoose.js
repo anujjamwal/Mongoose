@@ -17,7 +17,7 @@ function notAlreadyExecuted(migration) {
 print("Reading Migrations ...");
 listFiles("migrations").forEach(function(file) { 
 	if(isJsFile(file)) { 
-		migrations[parseInt(file.name.substr("migrations".length+1, file.name.indexOf("_")+1))] = file.name;
+		migrations[parseInt(file.name.match(/[1-9][0-9]*/)[0])] = file.name;
 	}
 });
 print((migrations.length-1)+ " Migration scripts found ...");
